@@ -109,7 +109,7 @@ input, select, textarea {
 		line-height: 1.75em;
 		color: #888;
 	}
-
+	
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		color: #666;
@@ -2218,12 +2218,13 @@ input, select, textarea {
 		}
 
 			#main > section.dark {
-				color: #ddd;
-				color: rgba(255, 255, 255, 0.75);
+				color: black;
+				font-weight: 600;
 			}
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
 					color: inherit;
+					font-weight: 1000;
 				}
 
 				#main > section.dark strong {
@@ -2247,8 +2248,9 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-color: #f5fafa;
+				height: auto;
+				/* background-image: url("../../images/banner.mp4"); */
 			}
 
 			#main > section.two {
@@ -2263,6 +2265,27 @@ input, select, textarea {
 				background-color: #e8edec;
 			}
 
+/* Video */
+
+.container { position:relative; }
+.container video {
+	position: absolute;
+	top: -230px;
+	left: -105px;
+	width: 1410px;
+    z-index: 0;
+}
+
+.overlay {
+	position: relative;
+	z-index:1;
+	text-align: center;
+}
+
+
+#mainOverlayText {
+
+}
 /* Wide */
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
